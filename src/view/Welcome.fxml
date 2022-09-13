@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="center" hgap="10" prefHeight="220.0" prefWidth="336.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.WelcomeController">
+   <children>
+      <VBox prefHeight="223.0" prefWidth="366.0" spacing="10.0">
+         <children>
+            <Label prefHeight="74.0" prefWidth="254.0" text="%loginGreeting" wrapText="true" />
+            <HBox prefHeight="21.0" prefWidth="254.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="80.0" text="%loginUserNameField" />
+                  <TextField fx:id="userNameField" />
+               </children>
+            </HBox>
+            <HBox prefHeight="26.0" prefWidth="254.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="80.0" text="%loginPasswordField" />
+                  <PasswordField fx:id="passwordField" />
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="66.0" prefWidth="316.0">
+               <children>
+                  <Button fx:id="loginButton" defaultButton="true" layoutX="202.0" layoutY="8.0" mnemonicParsing="false" onAction="#login" prefHeight="31.0" prefWidth="64.0" text="%loginButton" />
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </VBox>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

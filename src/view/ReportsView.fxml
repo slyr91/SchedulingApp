@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ReportsViewController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="31.0" prefWidth="332.0" spacing="10.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Button fx:id="appByMonthButton" mnemonicParsing="false" onAction="#generateAppByMonthReport" text="%appByMonth" />
+            <Label text="%year" />
+            <ComboBox fx:id="yearChoiceBox" prefHeight="31.0" prefWidth="90.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="350.0" layoutY="14.0" prefHeight="31.0" prefWidth="364.0" spacing="10.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Button fx:id="scheduleButton" mnemonicParsing="false" onAction="#generateScheduleReport" text="%schedule" />
+            <Button fx:id="averageAppButton" mnemonicParsing="false" onAction="#generateAverageAppsReport" text="%averageApp" />
+         </children>
+      </HBox>
+      <TextArea fx:id="reportArea" editable="false" layoutX="14.0" layoutY="54.0" prefHeight="333.0" prefWidth="574.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="54.0" />
+   </children>
+</AnchorPane>
